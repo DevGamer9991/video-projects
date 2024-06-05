@@ -29,8 +29,9 @@ for i in range(len(A)-1):
     plt.bar(range(i+1), A[:i+1], color='g')
 
     plt.bar(range(i+1, len(A)), A[i+1:], color='r')
-
-    plt.bar(i, A[i], color='b')
+    
+    # make the next element to be sorted blue
+    plt.bar(i+1, A[i+1], color='b')
     
     plt.tick_params(labelleft=False)
     plt.tick_params(labelbottom=False)

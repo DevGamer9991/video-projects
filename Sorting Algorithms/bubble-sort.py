@@ -30,7 +30,8 @@ if __name__ == "__main__":
         plt.bar(range(len(arr)-i-1, len(arr)), arr[len(arr)-i-1:], color='g')
 
         plt.bar(range(len(arr)-i-1), arr[:len(arr)-i-1], color='r')
-
+        
+        # make the next element to be sorted blue
         plt.bar(len(arr)-i-1, arr[len(arr)-i-1], color='b')
         
         plt.tick_params(labelleft=False)
